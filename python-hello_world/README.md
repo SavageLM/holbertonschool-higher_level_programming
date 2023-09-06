@@ -19,3 +19,4 @@
 |3-print_number.py|Prints a value stored in variable, then a string|
 |4-print_float.py|Prints the float of a variable with 2 digits|
 |5-print_string.py| Prints 3x string, then first 9 characters|
+|6-concat.py| concatenates two variables, then prints|
