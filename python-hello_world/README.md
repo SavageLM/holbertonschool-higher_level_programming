@@ -17,3 +17,5 @@
 |----------|----------------:|
 |2-print.py| Prints an exact string|
 |3-print_number.py|Prints a value stored in variable, then a string|
+|4-print_float.py|Prints the float of a variable with 2 digits|
+
