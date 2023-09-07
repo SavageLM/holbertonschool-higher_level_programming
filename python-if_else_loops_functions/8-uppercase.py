@@ -11,4 +11,4 @@ def uppercase(str):
         else:
             character = chr(character)
             newstr += character
-    print("{}\n".format(newstr))
+    print("{}".format(newstr))
