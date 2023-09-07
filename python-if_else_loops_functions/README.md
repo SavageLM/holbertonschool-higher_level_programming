@@ -24,3 +24,4 @@
 |7-islower.py|Checks if a character is lower case|
 |8-uppercase.py| Makes a string all uppercase|
 |9-print_last_digit.py|Prints the last digit of a number|
+|10-add.py|Adds 2 numbers|
