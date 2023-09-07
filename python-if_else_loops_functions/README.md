@@ -19,3 +19,4 @@
 |1-last_digit.py| Prints the last digit of a number|
 |2-print_alphabet.py| Prints the alphabet|
 |4-print_hexa.py|Prints a number in decimal and hexadecimal|
+|5-print_comb2.py|Prints 00-99|
