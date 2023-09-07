@@ -20,3 +20,4 @@
 |2-print_alphabet.py| Prints the alphabet|
 |4-print_hexa.py|Prints a number in decimal and hexadecimal|
 |5-print_comb2.py|Prints 00-99|
+|6-print_comb3.py| prints smallest combination of 2 digits|
