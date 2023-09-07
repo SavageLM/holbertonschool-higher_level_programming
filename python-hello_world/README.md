@@ -23,3 +23,4 @@
 |7-edges.py| prints a string in multiple parts|
 |8-concat_edges.py|Prints a string from multiple variables|
 |9-easter_egg.py| Prints "The Zen of Python"|
+|7-islower.py| Determines if a character is lower case|
