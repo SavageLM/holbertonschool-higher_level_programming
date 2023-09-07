@@ -26,3 +26,4 @@
 |9-print_last_digit.py|Prints the last digit of a number|
 |10-add.py|Adds 2 numbers|
 |11-pow.py|Compute a to the power of b|
+|12-fizzbuzz.py| prints fizz, buzz, or fizzbuzz|
