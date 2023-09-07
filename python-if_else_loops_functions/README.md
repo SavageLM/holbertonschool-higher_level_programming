@@ -17,3 +17,4 @@
 |----------|----------------:|
 |0-positive_or_negative.py| Prints random number, tells if pos, neg, 0|
 |1-last_digit.py| Prints the last digit of a number|
+|2-print_alphabet.py| Prints the alphabet|
