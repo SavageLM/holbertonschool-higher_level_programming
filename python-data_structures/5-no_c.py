@@ -2,6 +2,5 @@
 def no_c(my_string):
 
     if isinstance(my_string, str):
-        new_string = my_string.replace('c', '')
-        new_string = new_string.replace('C', '')
+        new_string = new_string.translate({ord(i): None for i in 'cC'})
         return new_string
