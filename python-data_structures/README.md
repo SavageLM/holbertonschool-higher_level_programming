@@ -20,3 +20,4 @@
 |2-replace_in_list.py| Replaces an element in a list|
 |3-print_reversed_list_integer.py| Prints a list in reverse|
 |4-new_in_list.py| Copy a list and replace an element in the copy|
+|5-no_c.py| removes all c and C from a string|
