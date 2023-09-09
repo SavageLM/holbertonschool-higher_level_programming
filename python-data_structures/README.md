@@ -17,3 +17,4 @@
 |----------|----------------:|
 |0-print_list_integer.py| Function that prints a list of integers|
 |1-element_at.py| Retireves an element from a list|
+|2-replace_in_list.py| Replaces an element in a list|
