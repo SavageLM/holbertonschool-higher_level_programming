@@ -19,3 +19,4 @@
 |1-element_at.py| Retireves an element from a list|
 |2-replace_in_list.py| Replaces an element in a list|
 |3-print_reversed_list_integer.py| Prints a list in reverse|
+|4-new_in_list.py| Copy a list and replace an element in the copy|
