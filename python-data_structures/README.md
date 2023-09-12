@@ -21,4 +21,5 @@
 |3-print_reversed_list_integer.py| Prints a list in reverse|
 |4-new_in_list.py| Copy a list and replace an element in the copy|
 |5-no_c.py| removes all c and C from a string|
-|6-print_matrix_integer.py| Prints a matrix|
+|6-print_matrix_integer.py| Prints a matrixi|
+|7-add_tuple.py| Adds two tuples|
