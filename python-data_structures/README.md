@@ -25,3 +25,4 @@
 |7-add_tuple.py| Adds two tuples|
 |8-multiple_returns.py|Returns a tuple of the length of str, and str[0]|
 |9-max_integer.py| Finds max integerr in list|
+|10-divisible_by_2.py|Finds multiples of 2 in a list|
