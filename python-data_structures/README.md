@@ -23,3 +23,4 @@
 |5-no_c.py| removes all c and C from a string|
 |6-print_matrix_integer.py| Prints a matrixi|
 |7-add_tuple.py| Adds two tuples|
+|8-multiple_returns.py|Returns a tuple of the length of str, and str[o]|
