@@ -3,7 +3,7 @@ def best_score(a_dictionary):
 
     bestest = 0
     person = ""
-    if a_dictionary is None
+    if a_dictionary is None:
         return None
     if len(a_dictionary) == 0:
         return None
