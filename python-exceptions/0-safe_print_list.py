@@ -4,8 +4,9 @@ def safe_print_list(my_list=[], x=0):
     printed = 0
     for i in range(x):
         try:
-            print("{}".format(my_string[i]), end='')
+            print("{}".format(my_listi[i]), end='')
             printed += 1
         except Exception:
             continue
+    print()
     return printed
