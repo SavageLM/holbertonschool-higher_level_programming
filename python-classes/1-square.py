@@ -2,6 +2,7 @@
 # 1-square.py
 """Define a class- Square"""
 
+
 class Square:
     """A Square with a size"""
     def __int__(self, size):
