@@ -23,3 +23,4 @@
 |2-square.py| Adds optional size, raises errors in Square|
 |3-square.py| Adds public instance for area|
 |4-square.py| Adds setters and getters to Square|
+|5-square.py| Addsa public instance that prints Square|
