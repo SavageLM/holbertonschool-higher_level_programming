@@ -22,3 +22,4 @@
 |1-square.py| Square Class with private instance of size|
 |2-square.py| Adds optional size, raises errors in Square|
 |3-square.py| Adds public instance for area|
+|4-square.py| Adds setters and getters to Square|
