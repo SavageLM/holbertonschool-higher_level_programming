@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 # 1-square.py
 # Logan Savage <6667@holbertonstudents.com>
 """Define a class- Square"""
