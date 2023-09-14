@@ -1,5 +1,6 @@
 #!/bin/usr/python3
 # 1-square.py
+# Logan Savage <6667@holbertonstudents.com>
 """Define a class- Square"""
 
 
@@ -12,4 +13,4 @@ class Square:
         Args:
             size(int): Size of the square.
         """
-        self.__size = size
+        iself.__size = size
