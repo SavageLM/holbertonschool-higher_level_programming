@@ -19,3 +19,4 @@
 | **File** | *__Description__* |
 |----------|----------------:|
 |0-square.py| An empty class called Square|
+|1-square.py| Square Class with private instance of size|
