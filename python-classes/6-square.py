@@ -14,8 +14,8 @@ class Square:
             size(int): Size of the square.
             position(int, int): position of square.
         """
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -47,13 +47,13 @@ class Square:
 
     def my_print(self):
         """Public method that prints the Square"""
-        if self.size == 0:
+        if self.__size == 0:
             print()
-        for y in range(0, self.position[1]):
+        for y in range(0, self.__position[1]):
             print()
-        for row in range(self.size):
-            for colomn in range(self.size):
-                for x in range(self.position[0], 0):
+        for row in range(self.__size):
+            for colomn in range(self.__size):
+                for x in range(self.__position[0], 0):
                     print(" ", end='')
                 print("#", end='')
             print()
