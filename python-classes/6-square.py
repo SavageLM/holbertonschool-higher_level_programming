@@ -62,7 +62,7 @@ class Square:
                 print()
         for row in range(self.__size):
             for x in range(self.__position[0], 0, -1):
-                    print(" ", end='')
+                print(" ", end='')
             for colomn in range(self.__size):
                 print("#", end='')
             print()
