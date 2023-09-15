@@ -7,12 +7,12 @@
 class Square:
     """A Square with a size"""
 
-    def __init__(self, size=0,position=(0, 0):
+    def __init__(self, size=0, position=(0, 0)):
         """Initializes a new Square with size
 
         Args:
             size(int): Size of the square.
-            position(int): tuple for position of square.
+            position(int, int): position of square.
         """
         self.__size = size
         self.__position = position
@@ -51,9 +51,9 @@ class Square:
             print()
         for y in range(0, self.position[1]):
             print()
-        for i in range(self.size):
-            for j in range(self.size):
-                for x in range(self.position[0], 0)
-                    print(" ",end='')
+        for row in range(self.size):
+            for colomn in range(self.size):
+                for x in range(self.position[0], 0):
+                    print(" ", end='')
                 print("#", end='')
             print()
