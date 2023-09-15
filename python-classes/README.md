@@ -24,3 +24,4 @@
 |3-square.py| Adds public instance for area|
 |4-square.py| Adds setters and getters to Square|
 |5-square.py| Addsa public instance that prints Square|
+|6-square.py| adds private instance of position, setter/getters and errors|
