@@ -1,0 +1,51 @@
+# 0-add_integer.txt
+# Logan Savage
+
+===========================
+Docutests for add_integer()
+===========================
+----import function----
+>>> add_integer = __import__('0-add_integer').add_integer
+
+----Testing----
+
+--integers---
+
+>>>add_integer(47, 53)
+100
+
+>>add_integer(56, -31)
+25
+
+---Floats---
+
+>>>add_integer(45, 3.14)
+48
+
+>>>add_integer(4.55, 5.55)
+9
+
+---Incorrect Inputs---
+
+>>>add_integer([1, 2 , 3], 15)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>>add_integer(54, "list")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>add_integer(100, float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>>add_integer(None, 45)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>>add_integer(52, Float('NaN')
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+
+
+----End----
