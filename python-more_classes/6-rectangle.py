@@ -5,7 +5,11 @@
 
 
 class Rectangle:
-    """This is a class for making a Rectangle"""
+    """This is a class for making a Rectangle
+
+    Attributes:
+        num_inst (int): How many rectangles exist
+    """
 
     num_inst = 0
 
