@@ -22,11 +22,11 @@ My name is Savage
 
 ---Incorrect Inputs---
 
->>> say_my_name(["Here", 47, 2.7], "Savage"])
+>>> say_my_name(55, "Savage"])
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("Logan", ["check", 3.2, 47])
+>>> say_my_name("Logan", 3.14])
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
