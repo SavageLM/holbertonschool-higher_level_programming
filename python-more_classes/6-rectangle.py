@@ -8,10 +8,10 @@ class Rectangle:
     """This is a class for making a Rectangle
 
     Attributes:
-        num_inst (int): How many rectangles exist
+        number_of_instances (int): How many rectangles exist
     """
 
-    num_inst = 0
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initializes a Rectangle.
@@ -21,7 +21,7 @@ class Rectangle:
             width (int): width of the rectangle
             height (int): Height of the rectangle
         """
-        Rectangle.num_inst += 1
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -93,4 +93,4 @@ class Rectangle:
     def __del__(self):
         """Detects if a rectangle has been deleted and prints a string"""
         print("Bye rectangle...")
-        Rectangle.num_inst -= 1
+        Rectangle.number_of_instances -= 1
