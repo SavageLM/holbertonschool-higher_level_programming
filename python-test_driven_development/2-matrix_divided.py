@@ -6,7 +6,7 @@
 
 def matrix_divided(matrix, div):
     """Returns a new matrix wtih all elements divided by div
-    
+
     Floats with be cast to int.
 
     Raises:

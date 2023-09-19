@@ -26,3 +26,8 @@
 | **File** | *__Description__* |
 |----------|----------------:|
 |0-add_integer.py| Function that adds 2 integers and docutests|
+|2-matrix_divided.py| Function that divides a matrix and docutest|
+|3-say_my_name.py| Function that prints a name and docutest|
+|4-print_square.py| Function that prints a square and docutest|
+|5-text_indentation.py| Function that prints newline at certain characters and docutest|
+|6-max_integer_test.py|Unitest file for a function to find max integer in a list|
