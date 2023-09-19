@@ -21,6 +21,6 @@ def text_indentation(text):
             print(sentence)
             print()
             sentence = ""
-            while i < (len(text) -1) and text[i + 1] == " ":
+            while i < (len(text) - 1) and text[i + 1] == " ":
                 i += 1
     print(sentence, end='')
