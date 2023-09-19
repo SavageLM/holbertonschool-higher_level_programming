@@ -15,54 +15,54 @@ Docutests for matrix_divided()
 
 --integers---
 
->>>print(matrix_divided(matrix, 5))
+>>> print(matrix_divided(matrix, 5))
 [[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
 
->>print(matrix_divided(matrx, -5))
+>>> print(matrix_divided(matrx, -5))
 [[-1.0, -2.0, -3.0], [-4.0, -5.0, -6.0]]
 
 ---Floats---
 
->>>print(matrix_divided(matrix, 0.5))
+>>> print(matrix_divided(matrix, 0.5))
 [[10, 20, 30], [40, 50, 60]]
 
->>>print(matrix_divided(matrix, float('inf'))
+>>> print(matrix_divided(matrix, float('inf'))
 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
 ---Incorrect Inputs---
 
->>>print(matrix_divided(matrix, ))
+>>> print(matrix_divided(matrix, ))
 Traceback (most recent call last):
 TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
->>>matrix = [
+>>> matrix = [
 ...[1, 2, "what"]
 ...[4, 5, 6]
 ...]
 
->>>print(matrix_divided(matrix, 5))
+>>> print(matrix_divided(matrix, 5))
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
->>matrix = [
+>>> matrix = [
 ...[1, 2, 3]
 ...[4, 5, 6]
 ...]
 
->>>print(matrix_divided(matrix, 0))
+>>> print(matrix_divided(matrix, 0))
 Traceback (most recent call last):
 ZeroDivisionError: division by zero
 
->>>print(matrix_divided(matrix, "test")
+>>> print(matrix_divided(matrix, "test")
 Traceback (most recent call last):
 TypeError: div must be a number
 
->>>matrix = [
+>>> matrix = [
 ...[1, 2, 3]
 ...[4, 5, 6, 7]
 ...]
 
->>>print(matrix_divided(matrix, 1))
+>>> print(matrix_divided(matrix, 1))
 Traceback (most recent call last):
 TypeError: each row of the matrix must have the same size
 

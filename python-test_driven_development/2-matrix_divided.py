@@ -16,3 +16,19 @@ def matrix_divided(matrix, div):
     ZeroDivisionError if div is 0
     """
 
+    ermo = "matrix must be a matrix (list of lists) of integers/floats"
+    new_matrix = []
+    if type(div) is not int and type(div) is not float:
+        raise TypeError("div must be a number")
+    if div == 0:
+        raise ZeroDivisionError("division by zero")
+    if type(matrix) is not list:
+        raise TypeError(ermo)
+    if all(len(row) == len(matrix[0]) for row in matrix) is not True:
+        raise TypeError("Each row of the matrix must have the same size")
+    for row in matrix:
+        for ele in row:
+            if type(ele) is not int and type(ele) is not float:
+                raise TypeError(ermo)
+            new_matrix[row].append(round(ele / div, 2))
+    return new_matrix
