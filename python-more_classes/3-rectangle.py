@@ -69,10 +69,10 @@ class Rectangle:
         """ Returns a printable Rectangle"""
         new_rec = []
         if self.__height == 0 or self.__width == 0:
-            return 0
+            return ("")
         for high in range(self.__height):
             for wide in range(self.__width):
                 new_rec.append('#')
-            if high != self._height - 1:
+            if high != self.__height - 1:
                 new_rec.append("\n")
         return ("".join(new_rec))
