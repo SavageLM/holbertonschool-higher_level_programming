@@ -19,3 +19,6 @@
 | **File** | *__Description__* |
 |----------|----------------:|
 |0-rectangle.py| An empty class called Rectangle|
+|1-rectangle.py| Adds setters/getters for height and width|
+|2-rectangle.py| Adds an area and perimeter functions|
+|3-rectangle.py| Adds print() and str() statements|
