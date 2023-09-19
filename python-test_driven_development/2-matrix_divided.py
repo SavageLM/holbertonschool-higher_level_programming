@@ -26,8 +26,8 @@ def matrix_divided(matrix, div):
         raise TypeError(ermo)
     if all(len(row) == len(matrix[0]) for row in matrix) is not True:
         raise TypeError("Each row of the matrix must have the same size")
-    for row in matrix:
-        for ele in row:
+    for row in range(len(matrix)):
+        for ele in range(len(row)):
             if type(ele) is not int and type(ele) is not float:
                 raise TypeError(ermo)
             new_matrix[row].append(round(ele/div, 2))
