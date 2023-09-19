@@ -28,10 +28,20 @@ class TestMaxInteger(unittest.TestCase):
         sort = [1, 2, 6, 9]
         self.assertEqual(max_integer(sort), 9)
 
+    def test_start_with_max(self):
+        """Tests for max at start of list"""
+        start = [9, 8, 7, 6]
+        self.assertEqual(max_integer(start), 9)
+
     def test_neg(self):
         """ Tests for negatives"""
         neg = [-8, -5, -3, -1]
         self.assertEqual(max_integer(neg), -1)
+
+     def test_single_element_list(self):
+         """tests for a single element"""
+         single = [9]
+         self.assertEqual(max_integer(single), 9)
 
 if __name__ == '__main__':
     unittest.main()
