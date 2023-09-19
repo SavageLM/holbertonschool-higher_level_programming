@@ -17,7 +17,6 @@ def matrix_divided(matrix, div):
     """
 
     ermo = "matrix must be a matrix (list of lists) of integers/floats"
-    new_matrix = []
     if type(div) is not int and type(div) is not float:
         raise TypeError("div must be a number")
     if div == 0:
@@ -26,9 +25,8 @@ def matrix_divided(matrix, div):
         raise TypeError(ermo)
     if all(len(row) == len(matrix[0]) for row in matrix) is not True:
         raise TypeError("Each row of the matrix must have the same size")
-    for row in range(len(matrix)):
-        for ele in range(len(matrix[row])):
+    for row in matrix:
+        for ele in row:
             if type(ele) is not int and type(ele) is not float:
                 raise TypeError(ermo)
-            new_matrix[row].append(round(ele/div, 2))
-    return new_matrix
+    return [[round(element/div, 2) for element in row] for row in matrix]
