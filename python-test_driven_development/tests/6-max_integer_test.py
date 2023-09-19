@@ -12,7 +12,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_empty_list(self):
         """ Tests for empty lists"""
         no_list = []
-        self.assertEqual(max_integer(empty_list), None)
+        self.assertEqual(max_integer(no_list), None)
 
     def test_empty_string(self):
         """ Tests for empty strings"""
