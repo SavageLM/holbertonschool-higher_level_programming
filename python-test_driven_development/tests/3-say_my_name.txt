@@ -1,0 +1,37 @@
+# 3-say_my_name.txt
+# Logan Savage
+
+===========================
+Docutests for say_my_name(first_name, last_name="")
+===========================
+----import function----
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+----Testing----
+
+---Strings---
+
+>>> say_my_name("Logan", "Savage")
+My name is Logan Savage
+
+>>> say_my_name("Logan")
+My name is Logan
+
+>>> say_my_name("Savage")
+My name is Savage
+
+---Incorrect Inputs---
+
+>>> say_my_name(["Here", 47, 2.7], "Savage"])
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+>>> say_my_name("Logan", ["check", 3.2, 47])
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+----End----
