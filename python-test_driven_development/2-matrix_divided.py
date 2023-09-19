@@ -30,5 +30,5 @@ def matrix_divided(matrix, div):
         for ele in row:
             if type(ele) is not int and type(ele) is not float:
                 raise TypeError(ermo)
-            new_matrix[row].append(round(ele / div, 2))
+            new_matrix[row].append(round(ele/div, 2))
     return new_matrix
