@@ -77,7 +77,7 @@ class Rectangle:
                 new_rec.append("\n")
         return ("".join(new_rec))
 
-    def __repr___(self):
+    def __repr__(self):
         """Returns a string representing a rectangle"""
         str_rec = "Rectangle(" + str(self.__width)
         str_rec += ", " + str(self.__height) + ")"
