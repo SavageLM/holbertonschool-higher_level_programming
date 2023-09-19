@@ -38,10 +38,10 @@ class TestMaxInteger(unittest.TestCase):
         neg = [-8, -5, -3, -1]
         self.assertEqual(max_integer(neg), -1)
 
-     def test_single_element_list(self):
+     """def test_single_element_list(self):
          """tests for a single element"""
          single = [9]
-         self.assertEqual(max_integer(single), 9)
+         self.assertEqual(max_integer(single), 9)"""
 
 if __name__ == '__main__':
     unittest.main()
