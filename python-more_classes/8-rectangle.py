@@ -74,14 +74,12 @@ class Rectangle:
         else:
             return ((self.__height * 2) + (self.__width * 2))
 
-    def def bigger_or_equal(rect_1, rect_2):
+    def bigger_or_equal(rect_1, rect_2):
         """ Function for finding the larger rectangle
 
         Args:
             rect_1: first rectangle
             rect_2: second rectangle
-        Raises:
-            TypeError if args are not rectangles
         """
         if type(rect_1) is not Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
