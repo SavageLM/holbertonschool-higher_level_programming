@@ -22,12 +22,17 @@ class TestMaxInteger(unitest.TestCase):
     def test_unsorted_list(self):
         """ Tests for unsorted lists"""
         unsort = [1, 9, 3, 6]
-        self.assertEqual(max_integer(unsort))
+        self.assertEqual(max_integer(unsort), 9)
 
     def test_sorted_list(self):
         """ Tests for sorted lists"""
         sort = [1, 2, 6, 9]
-        self.assertEqual(max_integer(sort))
+        self.assertEqual(max_integer(sort), 9)
+
+    def test_neg(self):
+        """ Tests for negatives"""
+        neg = [-8, -5, -3, -1]
+        self.assertEqual(max_integer(neg), -1)
 
 if __name__ == '__main__':
     unittest.main()
