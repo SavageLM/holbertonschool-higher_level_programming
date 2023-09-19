@@ -1,0 +1,48 @@
+# 5-text_indentation.txt
+# Logan Savage
+
+===========================
+Docutests for text_indentation(text)
+===========================
+----import function----
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+----Testing----
+
+---Strings---
+
+>>> text_indention("Hello")
+Hello
+
+>>> text_indention("Hello?     Out there")
+Hello?
+<BLANKLINE>
+Out there
+
+>>> text_indention("   Hello? Out there: in the wilds")
+Hello?
+<BLANKLINE>
+Out there:
+<BLANKLINE>
+in the wilds
+
+>>> text_indention(""Hello? Out there: in the wilds. We are here")
+Hello?
+<BLANKLINE>
+Out there:
+<BLANKLINE>
+in the wilds.
+<BLANKLINE>
+We are here
+
+---Incorrect Inputs---
+
+>>> text_indention(100)
+raceback (most recent call last):
+TypeError: text must be a string
+
+>>> text_indention()
+raceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+----End----
