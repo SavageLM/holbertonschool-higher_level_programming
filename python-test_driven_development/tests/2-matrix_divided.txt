@@ -2,7 +2,7 @@
 # Logan Savage
 
 ===========================
-Docutests for matrix_divided()
+Docutests for matrix_divided(matrix, div)
 ===========================
 ----import function----
 
