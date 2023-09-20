@@ -13,8 +13,8 @@ Docutests for matrix_divided(matrix, div)
 --integers---
 
 >>> matrix = [
-...[5, 10, 15]
-...[20, 25, 30]
+...	[5, 10, 15]
+...	[20, 25, 30]
 ...]
 
 >>> print(matrix_divided(matrix, 5))
@@ -48,8 +48,8 @@ Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 >>> matrix = [
-...[1, 2, "what"]
-...[4, 5, 6]
+...	[1, 2, "what"]
+...	[4, 5, 6]
 ...]
 
 >>> print(matrix_divided(matrix, 5))
@@ -57,8 +57,8 @@ Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 >>> matrix = [
-...[1, 2, 3]
-...[4, 5, 6]
+...	[1, 2, 3]
+...	[4, 5, 6]
 ...]
 
 >>> print(matrix_divided(matrix, 0))
@@ -70,8 +70,8 @@ Traceback (most recent call last):
 TypeError: div must be a number
 
 >>> matrix = [
-...[1, 2, 3]
-...[4, 5, 6, 7]
+...	[1, 2, 3]
+...	[4, 5, 6, 7]
 ...]
 
 >>> print(matrix_divided(matrix, 1))
