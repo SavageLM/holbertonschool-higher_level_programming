@@ -22,7 +22,7 @@ Empty list:
 []
 
 Single list:
->>> my_list = MyList([1, 3, 5]
+>>> my_list = MyList([1, 3, 5])
 >>> print(my_list)
 [1, 3, 5]
 
@@ -37,13 +37,13 @@ Removing from list:
 [7, 5]
 
 List of Strings:
->>> my_list = MyList(["This", "is", "a", "test]
+>>> my_list = MyList(["This", "is", "a", "test])
 >>> print(my_list)
-["This", "is", "a", "test]
+['This', 'is', 'a', 'test']
 
 Sorting list:
 >>> my_list.print_sorted()
-["a", "is", "test", "This"]
+['This', 'a', 'is', 'test']
 
 Appending to list:
 >>> my_list = MyList()
@@ -77,7 +77,6 @@ TypeError: list expected at most 1 argument, got 2
 
 Sorting different types:
 >>> my_list = MyList(["Hello", 256, "Float"])
-
 >>> my_list.print_sorted()
 Traceback (most recent call last):
 TypeError: '<' not supported between instances of 'int' and 'str'
