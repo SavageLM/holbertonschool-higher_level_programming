@@ -28,10 +28,10 @@ class Rectangle(BaseGeometry):
 
         def __repr__(self):
             """Returns Rectangle as a string"""
-            rect_str = "[" + str(self.__class__)
-            rect_str += "] " + str(self.__width)
-            rect_str += "/" + str(self.__height)
-            return rect_str
+            get_class = self.__class__
+            get_wide = self.__width
+            get_high = self.__height
+            return "[{}] {}/{}".format(get_class, get_wide, get_high)
 
         def __str__(self):
             """Returns a printable Rectangle"""
