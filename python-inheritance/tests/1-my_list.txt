@@ -37,7 +37,7 @@ Removing from list:
 [7, 5]
 
 List of Strings:
->>> my_list = MyList(["This", "is", "a", "test])
+>>> my_list = MyList(["This", "is", "a", "test"])
 >>> print(my_list)
 ['This', 'is', 'a', 'test']
 
