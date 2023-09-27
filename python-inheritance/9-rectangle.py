@@ -28,4 +28,7 @@ class Rectangle(BaseGeometry):
 
         def __str__(self):
             """Returns a printable Rectangle"""
-            return "[Rectangle] {}/{}".format(self.__width, self.__height)
+            get_class = self.__class__.__name__
+            get_wide = self.__width
+            get_high = self.__height
+            return "[{}] {}/{}".format(get_class, get_wide, get_high)
