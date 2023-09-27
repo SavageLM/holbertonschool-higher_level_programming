@@ -22,13 +22,13 @@ class Rectangle(BaseGeometry):
         self.__width = width
         self.__height = height
 
-        def area(self):
-            """Returns the area of Rectangle"""
-            return self.__width * self.__height
+    def area(self):
+        """Returns the area of Rectangle"""
+        return self.__width * self.__height
 
-        def __str__(self):
-            """Returns a printable Rectangle"""
-            get_class = self.__class__.__name__
-            get_wide = self.__width
-            get_high = self.__height
-            return "[{}] {}/{}".format(get_class, get_wide, get_high)
+    def __str__(self):
+        """Returns a printable Rectangle"""
+        get_class = self.__class__.__name__
+        get_wide = self.__width
+        get_high = self.__height
+        return "[{}] {}/{}".format(get_class, get_wide, get_high)
