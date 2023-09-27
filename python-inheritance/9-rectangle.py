@@ -26,16 +26,6 @@ class Rectangle(BaseGeometry):
             """Returns the area of Rectangle"""
             return self.__width * self.__height
 
-        def __repr__(self):
-            """Returns Rectangle as a string"""
-            get_class = self.__class__
-            get_wide = self.__width
-            get_high = self.__height
-            return "[{}] {}/{}".format(get_class, get_wide, get_high)
-
         def __str__(self):
             """Returns a printable Rectangle"""
-            get_class = self.__class__
-            get_wide = self.__width
-            get_high = self.__height
-            return "[{}] {}/{}".format(get_class, get_wide, get_high)
+            return "[Rectangle] {}/{}".format(self.__width, self.__height)
