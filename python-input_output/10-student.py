@@ -21,13 +21,14 @@ class Student:
 
     def to_json(self, attrs=None):
         """Returns dictionary representation of a student
-        
+
         If attrs is a list of strings, only attributes will be included
 
         Args:
             attrs (list): Attributes to include
         """
-        if type(attrs) is list and all(type(ele) == str for ele in attrs)):
+        if (type(attrs) is list and
+                all(type(ele) == str for ele in attrs)):
             return {idx: getattr(self, idx)
-                    for idx in attrs if hasattr(self,idx)}
+                    for idx in attrs if hasattr(self, idx)}
         return self.__dict__
