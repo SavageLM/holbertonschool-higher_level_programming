@@ -15,4 +15,4 @@ try:
 except FileNotFoundError:
     arg_list = []
 arg_list.extend(sys.argv[1:])
-save_jason(arg_list, "add_item.json")
+save_json(arg_list, "add_item.json")
