@@ -108,3 +108,31 @@ class Rectangle(Base):
         _high = self.height
         return "[{}] ({}) {}/{} {}/{}".format(_class, _id, _x,
                                               _y, _wide, _high)
+
+    def update(self, *args):
+        """Function that assigns arguements to attributes
+
+          Args:
+            *args (ints): New attribute values.
+                - 1st argument is id attribute
+                - 2nd argument is width attribute
+                - 3rd argument is height attribute
+                - 4th argument is x attribute
+                - 5th argument is y attribute
+        """
+        if len(args) > 0:
+            arg_num = 0
+            for arguments in args:
+                if arguments is None:
+                    self.__init__(self.width, self.height, self.x, self.y)
+                if arg_num is 0:
+                    self.id = arg_num
+                elif arg_num = 1:
+                    self.width = arg_num
+                elif arg_num = 2:
+                    self.height = arg_num
+                elif arg_num = 3:
+                    self.x =arg_num
+                elif arg_num = 4:
+                    self.y = arg_num
+                arg_num +=
