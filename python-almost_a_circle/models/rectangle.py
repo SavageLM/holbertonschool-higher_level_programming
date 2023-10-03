@@ -87,7 +87,14 @@ class Rectangle(Base):
         if self.width == 0 or self.height == 0:
             print()
             return
+        for y in range(self.y):
+            if self.y == 0:
+                continue
+            else:
+                print()
         for high in range(height):
+            for x in range(self.x):
+                print(" ", end="")
             for wide in range(width):
                 print("#", end='')
 
