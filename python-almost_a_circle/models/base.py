@@ -4,7 +4,7 @@
 """Defines a class, Base"""
 
 
-class Base():
+class Base:
     """Defines a class of Base"""
     __nb_objects = 0
 
