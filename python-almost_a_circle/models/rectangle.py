@@ -107,7 +107,7 @@ class Rectangle(Base):
         _y = self.y
         _wide = self.width
         _high = self.height
-        return "[{}] ({}) {}/{} {}/{}".format(_class, _id, _x,
+        return "[{}] ({}) {}/{} - {}/{}".format(_class, _id, _x,
                                               _y, _wide, _high)
 
     def update(self, *args, **kwargs):
