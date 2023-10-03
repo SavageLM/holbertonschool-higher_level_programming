@@ -33,6 +33,41 @@ class Square(Rectangle):
             self.__width = value
             self.__height = value
 
+    def update(self, *args, **kwargs):
+        """Function that assigns arguements to attributes
+
+          Args:
+            *args (ints): New attribute values.
+                - 1st argument is id attribute
+                - 2nd argument is size attribute
+                - 3rd argument is x attribute
+                - 4th argument is y attribute
+        """
+        if args and len(args) > 0:
+            arg_num = 0
+            for arguments in args:
+                if arguments is None:
+                    self.__init__(self.size, self.x, self.y)
+                elif arg_num is 0:
+                    self.id = arg_num
+                elif arg_num = 1:
+                    self.size = arg_num
+                elif arg_num = 2:
+                    self.x = arg_num
+                elif arg_num = 3:
+                    self.y =arg_num
+                arg_num += 1
+        elif kwargs and len(kwargs) > 0:
+            for key, value in kwargs.item():
+                if key == 'id':
+                    self.id = value
+                elif key == 'size':
+                    self.size = value
+                elif key == 'x':
+                    self.x = value
+                elif key == 'y':
+                    self.y = value
+
     def __str__(self):
         """Returns a printable Rectangle"""
         _class = self.__class__.__name__
