@@ -27,6 +27,14 @@ class Base:
         else:
             return json.dumps(list_dictionaries)
 
+    @staticmethod
+    def from_json_string(json_string):
+        """Function for converting a json string into a list"""
+        if json_string is None or len(json_string) is 0:
+            return []
+        else:
+            return json.loads(json_string)
+
     @classmethod
     def save_to_file(cls, list_objs):
         """Function that saves a JSON string to a file"""
