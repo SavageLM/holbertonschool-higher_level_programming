@@ -90,3 +90,14 @@ class Rectangle(Base):
         for high in range(height):
             for wide in range(width):
                 print("#", end='')
+
+    def __str__(self):
+        """Returns a printable Rectangle"""
+        _class = self.__class__.__name__
+        _id = self.id
+        _x = self.x
+        _y = self.y
+        _wide = self.width
+        _high = self.height
+        return "[{}] ({}) {}/{} {}/{}".format(_class, _id, _x,
+                                              _y, _wide, _high)
