@@ -9,7 +9,10 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=none):
-        """Initializes the class"""
+        """Initializes the class
+        Args:
+            id (int): id assigned to base object.
+        """
         if id is not None:
             self.id = id
         else:
