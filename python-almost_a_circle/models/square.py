@@ -18,6 +18,21 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
+    @property
+    def size(self):
+        return self.width
+
+    @setter.size
+    def size(self, value):
+        """Sets the value for size"""
+        if type(value) is not int:
+            raise TypeError("width must be an integer")
+        elif value <= 0:
+            raise ValueError("width must be > 0")
+        else:
+            self.__width = value
+            self.__height = value
+
     def __str__(self):
         """Returns a printable Rectangle"""
         _class = self.__class__.__name__
