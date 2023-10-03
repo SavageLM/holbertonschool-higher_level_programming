@@ -2,6 +2,7 @@
 # rectangle.py
 # Logan Savage <6667@holbertonstudents.com>
 """ Defines a class Rectangle that inherits from Base"""
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -109,7 +110,7 @@ class Rectangle(Base):
         return "[{}] ({}) {}/{} {}/{}".format(_class, _id, _x,
                                               _y, _wide, _high)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Function that assigns arguements to attributes
 
           Args:
@@ -120,12 +121,12 @@ class Rectangle(Base):
                 - 4th argument is x attribute
                 - 5th argument is y attribute
         """
-        if len(args) > 0:
+        if args and len(args) > 0:
             arg_num = 0
             for arguments in args:
                 if arguments is None:
                     self.__init__(self.width, self.height, self.x, self.y)
-                if arg_num is 0:
+                elif arg_num is 0:
                     self.id = arg_num
                 elif arg_num = 1:
                     self.width = arg_num
@@ -135,4 +136,16 @@ class Rectangle(Base):
                     self.x =arg_num
                 elif arg_num = 4:
                     self.y = arg_num
-                arg_num +=
+                arg_num += 1
+        elif kwargs and len(kwargs) > 0:
+            for key, value in kwargs.item():
+                if key == 'id':
+                    self.id = value
+                elif key == 'width':
+                    self.width = value
+                elif key == 'height':
+                    self.height = value
+                elif key == 'x':
+                    self.x = value
+                elif key == 'y':
+                    self.y = value
