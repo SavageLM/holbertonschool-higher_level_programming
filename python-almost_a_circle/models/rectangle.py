@@ -93,10 +93,10 @@ class Rectangle(Base):
                 continue
             else:
                 print()
-        for high in range(height):
+        for high in range(self.height):
             for x in range(self.x):
                 print(" ", end="")
-            for wide in range(width):
+            for wide in range(self.width):
                 print("#", end='')
 
     def __str__(self):
@@ -128,13 +128,13 @@ class Rectangle(Base):
                     self.__init__(self.width, self.height, self.x, self.y)
                 elif arg_num is 0:
                     self.id = arg_num
-                elif arg_num = 1:
+                elif arg_num == 1:
                     self.width = arg_num
-                elif arg_num = 2:
+                elif arg_num == 2:
                     self.height = arg_num
-                elif arg_num = 3:
+                elif arg_num == 3:
                     self.x = arg_num
-                elif arg_num = 4:
+                elif arg_num == 4:
                     self.y = arg_num
                 arg_num += 1
         elif kwargs and len(kwargs) > 0:
@@ -154,8 +154,8 @@ class Rectangle(Base):
         """Returns a dictionary of Rectangle"""
         return {
                 "id": self.id,
-                "width": self.width
-                "height": self.height
-                "x": self.x
+                "width": self.width,
+                "height": self.height,
+                "x": self.x,
                 "y": self.y
                 }
