@@ -108,7 +108,7 @@ class Rectangle(Base):
         _wide = self.width
         _high = self.height
         return "[{}] ({}) {}/{} - {}/{}".format(_class, _id, _x,
-                                              _y, _wide, _high)
+                                                _y, _wide, _high)
 
     def update(self, *args, **kwargs):
         """Function that assigns arguements to attributes
@@ -133,7 +133,7 @@ class Rectangle(Base):
                 elif arg_num = 2:
                     self.height = arg_num
                 elif arg_num = 3:
-                    self.x =arg_num
+                    self.x = arg_num
                 elif arg_num = 4:
                     self.y = arg_num
                 arg_num += 1

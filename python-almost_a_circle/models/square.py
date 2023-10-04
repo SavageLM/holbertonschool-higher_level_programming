@@ -55,7 +55,7 @@ class Square(Rectangle):
                 elif arg_num = 2:
                     self.x = arg_num
                 elif arg_num = 3:
-                    self.y =arg_num
+                    self.y = arg_num
                 arg_num += 1
         elif kwargs and len(kwargs) > 0:
             for key, value in kwargs.item():
@@ -85,4 +85,4 @@ class Square(Rectangle):
         _y = self.y
         _wide = self.width
         return "[{}] ({}) {}/{} - {}".format(_class, _id, _x,
-                                              _y, _wide)
+                                             _y, _wide)
