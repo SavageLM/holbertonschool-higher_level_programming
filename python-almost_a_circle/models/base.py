@@ -25,8 +25,7 @@ class Base:
         """Function that Returns the JSON string for a list of dictionaries"""
         if len(list_dictionaries) is 0 or list_dictionaries is None:
             return "[]"
-        else:
-            return json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries)
 
     @staticmethod
     def from_json_string(json_string):
@@ -67,4 +66,4 @@ class Base:
                 list_dictionaries = Base.from_json_string(name.read())
                 return [cls.create(**d) for d in list_dictionaries]
         except IOError:
-            return []
+            return "[]"
