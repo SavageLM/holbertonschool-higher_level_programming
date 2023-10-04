@@ -88,13 +88,10 @@ class Rectangle(Base):
         if self.width == 0 or self.height == 0:
             print()
             return
-        for y in range(self.y):
-            if self.y == 0:
-                continue
-            else:
-                print()
+        for y_pos in range(self.y):
+                print('x')
         for high in range(self.height):
-            for x in range(self.x):
+            for x_pos in range(self.x):
                 print(" ", end="")
             for wide in range(self.width):
                 print("#", end='')
@@ -126,7 +123,7 @@ class Rectangle(Base):
             for arguments in args:
                 if arguments is None:
                     self.__init__(self.width, self.height, self.x, self.y)
-                elif arg_num is 0:
+                elif arg_num == 0:
                     self.id = arg_num
                 elif arg_num == 1:
                     self.width = arg_num
