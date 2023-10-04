@@ -9,12 +9,12 @@ class Base:
     """Defines a class of Base"""
     __nb_objects = 0
 
-    def __init__(self, id=none):
+    def __init__(self, id=None):
         """Initializes the class
         Args:
             id (int): id assigned to base object.
         """
-        if id is not None:
+        if id != None:
             self.id = id
         else:
             Base.__nb_objects += 1
