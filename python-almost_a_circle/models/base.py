@@ -24,7 +24,7 @@ class Base:
     def to_json_string(list_dictionaries):
         """Function that Returns the JSON string for a list of dictionaries"""
         if len(list_dictionaries) is 0 or list_dictionaries is None:
-            return []
+            return "[]"
         else:
             return json.dumps(list_dictionaries)
 
@@ -32,7 +32,7 @@ class Base:
     def from_json_string(json_string):
         """Function for converting a json string into a list"""
         if json_string is None or len(json_string) is 0:
-            return []
+            return "[]"
         else:
             return json.loads(json_string)
 
@@ -64,7 +64,7 @@ class Base:
         name = cls.__name__ + ".json"
         try:
             with open(name, "r") as newfi:
-                list_dictionaries = Base.from_json_string(json_file.read())
+                list_dictionaries = Base.from_json_string(name.read())
                 return [cls.create(**d) for d in list_dictionaries]
         except IOError:
             return []
