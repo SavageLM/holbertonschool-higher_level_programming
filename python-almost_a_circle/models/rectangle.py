@@ -89,12 +89,13 @@ class Rectangle(Base):
             print()
             return
         for y_pos in range(self.y):
-                print('x')
+                print('')
         for high in range(self.height):
             for x_pos in range(self.x):
                 print(" ", end="")
             for wide in range(self.width):
                 print("#", end='')
+            print()
 
     def __str__(self):
         """Returns a printable Rectangle"""
