@@ -9,14 +9,15 @@ class Rectangle(Base):
     """ Defines a new class of Rectangle"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """Initializes Rectangle:
+        """Initializes Rectanbgle:
+
         Args:
             width (int): width of object.
             height (int): Height of object.
             x (int): x position of Rectangle.
             y (int): y position of Rectangle.
         """
-        super().__init__(id)
+        super().id.__init__(id)
         self.width = width
         self.height = height
         self.x = x
@@ -92,10 +93,10 @@ class Rectangle(Base):
                 continue
             else:
                 print()
-        for high in range(self.height):
+        for high in range(height):
             for x in range(self.x):
                 print(" ", end="")
-            for wide in range(self.width):
+            for wide in range(width):
                 print("#", end='')
 
     def __str__(self):
@@ -108,8 +109,10 @@ class Rectangle(Base):
         _high = self.height
         return "[{}] ({}) {}/{} - {}/{}".format(_class, _id, _x,
                                                 _y, _wide, _high)
+
     def update(self, *args, **kwargs):
-        """Function that assigns arguments to attributes
+        """Function that assigns arguements to attributes
+
           Args:
             *args (ints): New attribute values.
                 - 1st argument is id attribute
@@ -119,23 +122,23 @@ class Rectangle(Base):
                 - 5th argument is y attribute
         """
         if args and len(args) > 0:
-            arg_num = 1
+            arg_num = 0
             for arguments in args:
                 if arguments is None:
-                    continue
-                elif arg_num == 1:
-                    self.id = arguments
-                elif arg_num == 2:
-                    self.width = arguments
-                elif arg_num == 3:
-                    self.height = arguments
-                elif arg_num == 4:
-                    self.x = arguments
-                elif arg_num == 5:
-                    self.y = arguments
+                    self.__init__(self.width, self.height, self.x, self.y)
+                elif arg_num is 0:
+                    self.id = arg_num
+                elif arg_num = 1:
+                    self.width = arg_num
+                elif arg_num = 2:
+                    self.height = arg_num
+                elif arg_num = 3:
+                    self.x = arg_num
+                elif arg_num = 4:
+                    self.y = arg_num
                 arg_num += 1
         elif kwargs and len(kwargs) > 0:
-            for key, value in kwargs.items():
+            for key, value in kwargs.item():
                 if key == 'id':
                     self.id = value
                 elif key == 'width':
@@ -150,9 +153,9 @@ class Rectangle(Base):
     def to_dictionary(self):
         """Returns a dictionary of Rectangle"""
         return {
-            "id": self.id,
-            "width": self.width,
-            "height": self.height,
-            "x": self.x,
-            "y": self.y
-        }
+                "id": self.id,
+                "width": self.width
+                "height": self.height
+                "x": self.x
+                "y": self.y
+                }

@@ -22,7 +22,7 @@ class Square(Rectangle):
     def size(self):
         return self.width
 
-    @setter.size
+    @size.setter
     def size(self, value):
         """Sets the value for size"""
         if type(value) is not int:
@@ -72,8 +72,8 @@ class Square(Rectangle):
         """Returns a dictionary representation of Square"""
         return {
                 "id": self.id,
-                "size": self.size
-                "x": self.x
+                "size": self.size,
+                "x": self.x,
                 "y": self.y
                 }
 
