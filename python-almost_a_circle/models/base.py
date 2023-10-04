@@ -55,7 +55,7 @@ class Base:
                 newfi.write("[]")
             else:
                 list_dictionaries = [ob.to_dictionary() for ob in list_objs]
-                newfi.write(Base.to_json_string(list_objs))
+                newfi.write(Base.to_json_string(list_dictionaries))
 
     @classmethod
     def load_from_file(cls):
