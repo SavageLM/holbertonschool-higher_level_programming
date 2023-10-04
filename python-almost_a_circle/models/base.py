@@ -2,6 +2,7 @@
 # base.py
 # Logan Savage <6667@holbertonstudents.com>
 """ Declares a new base class """
+import json
 
 
 class Base:
