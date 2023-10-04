@@ -38,7 +38,7 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Returns an instance of class with all attributes"""
-        if dictionary is True and len(dictionary) != 0:
+        if dictionary and dictionary != {}:
             if cls.__name__ == "Rectangle":
                 new_inst = cls(1, 1)
             else:
