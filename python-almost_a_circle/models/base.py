@@ -63,7 +63,7 @@ class Base:
         name = cls.__name__ + ".json"
         try:
             with open(name, "r") as newfi:
-                list_dictionaries = Base.from_json_string(name.read())
+                list_dictionaries = Base.from_json_string(newfi.read())
                 return [cls.create(**d) for d in list_dictionaries]
         except IOError:
             return "[]"
