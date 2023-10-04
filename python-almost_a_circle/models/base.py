@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # base.py
 # Logan Savage <6667@holbertonstudents.com>
-"""Defines a class, Base"""
+""" Declares a new base class """
 
 
 class Base:
