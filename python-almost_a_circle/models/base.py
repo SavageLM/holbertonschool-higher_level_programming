@@ -36,6 +36,17 @@ class Base:
             return json.loads(json_string)
 
     @classmethod
+    def create(cls, **dictionary):
+        """Returns an instance of class with all attributes"""
+        if dictionary is True and len(dictionary) is not 0:
+            if cls.__name__ == "Rectangle":
+                new_inst = cls(1, 1)
+            else:
+                new_inst = cls(1)
+            new_inst.update(**dictionary)
+            return new_inst
+
+    @classmethod
     def save_to_file(cls, list_objs):
         """Function that saves a JSON string to a file"""
         name = cls.__name__ + .json
