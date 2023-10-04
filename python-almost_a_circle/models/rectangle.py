@@ -125,15 +125,15 @@ class Rectangle(Base):
                 if arguments is None:
                     self.__init__(self.width, self.height, self.x, self.y)
                 elif arg_num == 0:
-                    self.id = arg_num
+                    self.id = arguments
                 elif arg_num == 1:
-                    self.width = arg_num
+                    self.width = arguments
                 elif arg_num == 2:
-                    self.height = arg_num
+                    self.height = arguments
                 elif arg_num == 3:
-                    self.x = arg_num
+                    self.x = arguments
                 elif arg_num == 4:
-                    self.y = arg_num
+                    self.y = arguments
                 arg_num += 1
         elif kwargs and len(kwargs) > 0:
             for key, value in kwargs.item():
