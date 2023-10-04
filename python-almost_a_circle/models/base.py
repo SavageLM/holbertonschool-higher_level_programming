@@ -49,9 +49,21 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         """Function that saves a JSON string to a file"""
-        name = cls.__name__ + .json
+        name = cls.__name__ + ".json"
         with open(name, "w") as newfi:
             if len(list_objs) is 0 or list_objs is None:
                 newfi.write("[]")
             else:
+                list_dictionaries = [ob.to_dictionary() for ob in list_objs]
                 newfi.write(Base.to_json_string(list_objs))
+
+    @classmethod
+    def load_from_file(cls):
+        """Returns a JSON string converted into a list of instances"""
+        name = cls.__name__ + ".json"
+        try:
+            with open(name, "r") as newfi:
+                list_dictionaries = Base.from_json_string(json_file.read())
+                return [cls.create(**d) for d in list_dictionaries]
+        except IOError:
+            return []
