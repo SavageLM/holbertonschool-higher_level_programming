@@ -136,7 +136,7 @@ class Rectangle(Base):
                     self.y = arguments
                 arg_num += 1
         elif kwargs and len(kwargs) > 0:
-            for key, value in kwargs.item():
+            for key, value in kwargs.items():
                 if key == 'id':
                     self.id = value
                 elif key == 'width':
