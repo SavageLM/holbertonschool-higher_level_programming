@@ -2,7 +2,7 @@
 # rectangle.py
 # Logan Savage <6667@holbertonstudents.com>
 """ Defines a class Square that inherits from Rectangle"""
-from modeles.rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
