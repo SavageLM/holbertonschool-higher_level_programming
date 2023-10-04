@@ -48,13 +48,13 @@ class Square(Rectangle):
             for arguments in args:
                 if arguments is None:
                     self.__init__(self.size, self.x, self.y)
-                elif arg_num is 0:
+                elif arg_num == 0:
                     self.id = arg_num
-                elif arg_num = 1:
+                elif arg_num == 1:
                     self.size = arg_num
-                elif arg_num = 2:
+                elif arg_num == 2:
                     self.x = arg_num
-                elif arg_num = 3:
+                elif arg_num == 3:
                     self.y = arg_num
                 arg_num += 1
         elif kwargs and len(kwargs) > 0:
