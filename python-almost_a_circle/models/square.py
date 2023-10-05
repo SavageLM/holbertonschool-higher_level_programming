@@ -46,7 +46,7 @@ class Square(Rectangle):
                 elif arg_num == 0:
                     self.id = arguments
                 elif arg_num == 1:
-                    self.width = arguments
+                    self.size = arguments
                 elif arg_num == 2:
                     self.x = arguments
                 elif arg_num == 3:
