@@ -51,7 +51,7 @@ class Base:
         """Function that saves a JSON string to a file"""
         name = cls.__name__ + ".json"
         with open(name, "w") as newfi:
-            if len(list_objs) == 0 or list_objs is None:
+            if list_objs is None:
                 newfi.write("[]")
             else:
                 list_dictionaries = [ob.to_dictionary() for ob in list_objs]
