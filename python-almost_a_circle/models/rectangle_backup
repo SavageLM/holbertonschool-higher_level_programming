@@ -122,11 +122,10 @@ class Rectangle(Base):
         if args and len(args) > 0:
             arg_num = 0
             for arguments in args:
-                if arg_num == 0:
-                    if arguments is None:
-                        self.__init__(self.width, self.height, self.x, self.y)
-                    elif arg_num == 0:
-                        self.id = arguments
+                if arguments is None:
+                    self.__init__(self.width, self.height, self.x, self.y)
+                elif arg_num == 0:
+                    self.id = arguments
                 elif arg_num == 1:
                     self.width = arguments
                 elif arg_num == 2:
