@@ -66,4 +66,4 @@ class Base:
                 list_dictionaries = Base.from_json_string(newfi.read())
                 return [cls.create(**d) for d in list_dictionaries]
         except IOError:
-            return "[]"
+            return []
