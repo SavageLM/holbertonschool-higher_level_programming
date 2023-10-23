@@ -20,4 +20,5 @@
 |1-create_user.sql| Creates a new user|
 |2-create_read_user.sql| Creates a Read user and database|
 |3-force_name.sql| Creates a Table|
-|4-never_empty.sql| Creates a Table|
+|4-never_empty.sql| Creates a Table with default id of 1|
+|5-unique_id.sql| Creates a Table with unique ID|
