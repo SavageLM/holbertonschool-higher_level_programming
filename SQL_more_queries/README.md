@@ -23,3 +23,5 @@
 |4-never_empty.sql| Creates a Table with default id of 1|
 |5-unique_id.sql| Creates a Table with unique ID|
 |6-states.sql| Creates a db and Table with constraints|
+|7-cities.sql| Creates a db and a Table that references the table made in 6-states|
+|8-cities_of_california_subquery.sql| Lists all cities of California|
