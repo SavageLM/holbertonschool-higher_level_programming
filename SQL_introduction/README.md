@@ -29,3 +29,4 @@
 |10-top_score.sql| Lists all records ordered by score|
 |11-best_score.sql| Lists all records with score >10|
 |12-no_cheating.sql| Updates a row's value|
+|13-change_class.sql| Removes all rows with score <= 5|
