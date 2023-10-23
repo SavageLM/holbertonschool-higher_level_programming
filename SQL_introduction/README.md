@@ -22,3 +22,5 @@
 |3-list_tables.sql| Lists all tables|
 |4-first_table.SQL| Creates a table|
 |5-full_table.sql| Prints a discription of first_table|
+|6-list_values.sql|Lists all rows of a table|
+|7-insert_value.sql|Adds a row to a table|
