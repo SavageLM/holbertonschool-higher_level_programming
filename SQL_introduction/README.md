@@ -25,3 +25,4 @@
 |6-list_values.sql|Lists all rows of a table|
 |7-insert_value.sql|Adds a row to a table|
 |8-count_89.sql| Shows all records with id = 89|
+|9-full_creation.sql| Creates a new table and fills it|
