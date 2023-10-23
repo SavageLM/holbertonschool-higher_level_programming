@@ -31,3 +31,4 @@
 |12-no_cheating.sql| Updates a row's value|
 |13-change_class.sql| Removes all rows with score <= 5|
 |14-average.sql|Finds the average of all records scores|
+|15-groups.sql| lists all records with the same score|
