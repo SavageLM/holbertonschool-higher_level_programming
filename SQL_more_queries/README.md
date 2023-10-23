@@ -29,3 +29,4 @@
 |10-genre_id_by_show.sql| lists all shows contained in hbtn_0d_tvshows that have at least one genre linked.|
 |11-genre_id_all_shows.sql|  lists all shows contained in the database|
 |12-no_genre.sql| Lists all shows without a genre linked|
+|13-count_shows_by_genre.sql| lists all genres and displays the number of shows linked to each.|
