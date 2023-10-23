@@ -18,3 +18,5 @@
 |----------|----------------:|
 |0-list_databases.sql| Script that lists all databases|
 |1-create_database_if_missing.sql| Creates a database|
+|2-remove_database.sql| Removes a database|
+|3-list_tables.sql| Lists all tables|
