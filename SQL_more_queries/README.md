@@ -17,3 +17,4 @@
 | **File** | *__Description__* |
 |----------|----------------:|
 |0-privileges.sql| SHows permissions for users|
+|1-create_user.sql| Creates a new user|
