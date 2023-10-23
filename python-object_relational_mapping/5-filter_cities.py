@@ -14,11 +14,11 @@ def protected_filter():
                          passwd=sys.argv[2],
                          db=sys.argv[3])
     dc = db.cursor()
-    dc.execute("SELECT * FROM cities.id, cities.name, states.name FROM cities\
-        INNER JOIN states on cities.state_id = states.id ORDER BY id ASC")
+    dc.execute("SELECT * FROM cities\
+         JOIN states on cities.state_id = states.id ORDER BY id ASC")
     results = dc.fetchall()
-    for row in results:
-        print(row)
+    print_results = [city[2] for city in results if city[4] == sys.argv[4]]
+    print(', '.join(print_results))
     dc.close()
     db.close()
 
