@@ -22,3 +22,4 @@
 |3-force_name.sql| Creates a Table|
 |4-never_empty.sql| Creates a Table with default id of 1|
 |5-unique_id.sql| Creates a Table with unique ID|
+|6-states.sql| Creates a db and Table with constraints|
