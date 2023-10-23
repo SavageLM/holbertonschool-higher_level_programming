@@ -5,7 +5,7 @@ import MySQLdb
 import sys
 
 
-def all_states():
+def select_states():
     """ Finds a nd prints all states from database"""
 
     username = sys.argv[1]
@@ -27,4 +27,4 @@ def all_states():
 
 
 if __name__ == "__main__":
-    all_states()
+    select_states()
