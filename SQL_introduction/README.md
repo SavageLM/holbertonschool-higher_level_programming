@@ -20,3 +20,5 @@
 |1-create_database_if_missing.sql| Creates a database|
 |2-remove_database.sql| Removes a database|
 |3-list_tables.sql| Lists all tables|
+|4-first_table.SQL| Creates a table|
+|5-full_table.sql| Prints a discription of first_table|
