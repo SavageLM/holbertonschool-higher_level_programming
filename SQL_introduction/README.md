@@ -30,3 +30,4 @@
 |11-best_score.sql| Lists all records with score >10|
 |12-no_cheating.sql| Updates a row's value|
 |13-change_class.sql| Removes all rows with score <= 5|
+|14-average.sql|Finds the average of all records scores|
