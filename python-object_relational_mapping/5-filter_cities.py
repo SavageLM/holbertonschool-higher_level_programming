@@ -14,7 +14,7 @@ def protected_filter():
                          passwd=sys.argv[2],
                          db=sys.argv[3])
     dc = db.cursor()
-    dc.execute("SELECT * cities.id, cities.name, states.name FROM cities\
+    dc.execute("SELECT * FROM cities.id, cities.name, states.name FROM cities\
         INNER JOIN states on cities.state_id = states.id ORDER BY id ASC")
     results = dc.fetchall()
     for row in results:
