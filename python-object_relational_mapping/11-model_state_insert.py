@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is a script for listing the first State object in a database """
+"""This is a script for  creating a State object in a database """
 
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine

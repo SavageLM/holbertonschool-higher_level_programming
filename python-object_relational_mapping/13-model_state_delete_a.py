@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is a script for updating a State object in a database """
+"""This is a script for deleting a State object in a database """
 
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
@@ -7,8 +7,8 @@ from model_state import Base, State
 import sys
 
 
-def update_states():
-    """ updates a State objects"""
+def delete_states():
+    """ deletes a State objects"""
     engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
         sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
 
@@ -17,13 +17,12 @@ def update_states():
     Session.configure(bind=engine)
     session = Session()
 
-    updated_state = session.query(State).filter_by(id=2).first()
-    if updated_state:
-        updated_state.name = "New Mexico"
+    for state in session.query(State).filter(
+            State.name.like('%a%')):
+        session.delete(state)
         session.commit()
-        print("State with id 2 has been updated to 'New Mexico'")
     session.close()
 
 
 if __name__ == "__main__":
-    update_states()
+    delete_states()
