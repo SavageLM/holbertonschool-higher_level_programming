@@ -19,6 +19,7 @@
 |----------|----------------:|
 |0-rectangle.js| Createds an empty Rectangle class|
 |1-rectangle.js| UPdates Rectangle to take two arguments|
+|2-rectangle.js| Sets filter for positive height and width|
 |3-rectangle.js| Adds amethod for printing the Rectangle|
 |4-rectangle.js| Adds rotate and double methods for Rectangle|
 |5-square.js| Creates a Square class that inherits from Rectangle|
