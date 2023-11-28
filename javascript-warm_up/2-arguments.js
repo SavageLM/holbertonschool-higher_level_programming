@@ -2,9 +2,9 @@
 
 const argNum = process.argv.length - 2;
 if (argNum === 0) {
-  console.log('No Argument');
+  console.log('No argument');
 } else if (argNum === 1) {
-  console.log('Arguement found');
+  console.log('Argument found');
 } else {
-  console.log('Arguements found');
+  console.log('Arguments found');
 }
