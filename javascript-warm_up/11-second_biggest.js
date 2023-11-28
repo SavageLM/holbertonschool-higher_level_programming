@@ -16,4 +16,8 @@ function findSecondBiggest (numList) {
 
 const args = process.argv.slice(2);
 const argNums = args.map(Number);
-console.log(findSecondBiggest(argNums));
+if (argNums.length < 2) {
+  console.log(0);
+} else {
+  console.log(findSecondBiggest(argNums));
+}
