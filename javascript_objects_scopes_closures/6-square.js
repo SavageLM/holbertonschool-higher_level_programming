@@ -7,10 +7,10 @@ class Square extends SquareOne {
     if (c === undefined) {
       this.print();
     } else {
-      for (let i = 0; i < this.size; i++) {
+      for (let i = 0; i < this.height; i++) {
         let row = '';
-        for (let j = 0; j < this.size; j++) {
-          row += 'c';
+        for (let j = 0; j < this.width; j++) {
+          row += c;
         }
         console.log(row);
       }
