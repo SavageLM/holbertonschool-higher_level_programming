@@ -7,4 +7,6 @@ function add (a, b) {
 }
 if (!isNaN(argOne) && !isNaN(argTwo)) {
   add(argOne, argTwo);
+} else {
+  console.log('NaN');
 }
