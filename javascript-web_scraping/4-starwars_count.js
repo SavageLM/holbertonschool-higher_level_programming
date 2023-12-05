@@ -7,11 +7,11 @@ request(movieUrl, (error, response, body) => {
   } else {
     const movieInfo = JSON.parse(body);
     let count = 0;
-    for (let i = 0; i < movieInfo.length; i++) {
-      if (movieInfo.character.endswith('/18/')) {
-        count++;
+    movieInfo.forEach((movie) => {
+      if (movie.characters.endsWith('/18/')) {
+        count += 1;
       }
-    }
+    });
     console.log(count);
   }
 });
