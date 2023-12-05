@@ -7,7 +7,7 @@ request(movieUrl, (error, response, body) => {
   } else {
     const movieInfo = JSON.parse(body);
     let count = 0;
-    movieInfo.forEach((movie) => {
+    movieInfo.results.forEach((movie) => {
       if (movie.characters.endsWith('/18/')) {
         count += 1;
       }
