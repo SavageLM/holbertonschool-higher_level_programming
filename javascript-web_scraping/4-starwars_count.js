@@ -8,7 +8,7 @@ request(movieUrl, (error, response, body) => {
     const movieInfo = JSON.parse(body);
     let count = 0;
     movieInfo.results.forEach((movie) => {
-      if (movie.characters.endsWith('/18/')) {
+      if (movie.characters.forEach((character) => character.endsWith('/18/'))) {
         count += 1;
       }
     });
