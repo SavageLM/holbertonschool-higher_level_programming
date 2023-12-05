@@ -14,5 +14,6 @@ request(movieUrl, (error, response, body) => {
         doneTasks[task.userId] += 1;
       }
     });
+    console.log(doneTasks);
   }
 });
